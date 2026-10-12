@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kawaii Chaos — anime · beauty · merch, from a small shop in Johannesburg</title>
+  <meta name="description" content="Kawaii Chaos is a small Johannesburg shop for anime figures, cute jewellery, pouches, keychains, socks and beauty bits. Small batches, packed by hand, prices in rand." />
+  <meta name="theme-color" content="#fbf3f7" />
+  <link rel="icon" href="images/kawaii-chaos-logo.jpeg" />
+  <!-- Fonts: free Google Fonts. Offline, the site falls back to system fonts and still works. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="sr-only" href="#drop">Skip to the shop</a>
+
+  <div class="strip">
+    <div class="wrap">
+      <span>Small batches · when it's gone, it's gone</span>
+      <span>Courier anywhere in South Africa · <a href="#ask">outside SA? ask first</a></span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="Kawaii Chaos, back to top">
+        <img class="brand-logo" src="images/kawaii-chaos-logo.jpeg" width="44" height="44" alt="" />
+        <span class="brand-name">Kawaii Chaos<small>anime · beauty · merch</small></span>
+      </a>
+
+      <button class="menu-btn" id="menu-btn" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="#drop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#shipping">Delivery</a>
+        <a href="#ask">Ask me</a>
+      </nav>
+
+      <button class="cart-btn" id="cart-btn" type="button" aria-controls="drawer" aria-expanded="false">
+        <span class="label">Basket</span>
+        <span class="cart-count" id="cart-count">0</span><span class="sr-only"> items in basket</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <p class="kicker mono">Anime · beauty · merch · Johannesburg</p>
+          <h1>Cute things.<br /><em>A little chaos.</em></h1>
+          <!-- TODO (Joseph): make this paragraph 100% true for you — where you source, who packs, etc. -->
+          <p class="lede">
+            Kawaii Chaos is a small shop for anime figures, Sanrio-cute jewellery, pouches and beauty bits.
+            Only a few of each, checked before they're packed, and sent from Joburg with care.
+          </p>
+          <div class="actions">
+            <a class="btn" href="#drop">Shop the shelf</a>
+            <a class="btn ghost" href="#about">About the shop</a>
+          </div>
+        </div>
+
+        <div class="hero-art">
+          <figure class="logo-disc">
+            <img src="images/kawaii-chaos-logo.jpeg" width="1254" height="1254"
+                 alt="Kawaii Chaos logo: a lavender-haired anime girl with headphones above the words Kawaii Chaos — anime, beauty, merch" />
+          </figure>
+          <a class="polaroid p1" href="#drop" aria-label="Shop the teal bunny-ears figure">
+            <img src="images/bunny-ears-figure.jpeg" width="1052" height="1081" alt="" />
+            <span>bunny-ears figure</span>
+          </a>
+          <a class="polaroid p2" href="#drop" aria-label="Shop the Hello Kitty necklace">
+            <img src="images/hello-kitty-necklace.jpeg" width="1280" height="1280" alt="" />
+            <span>hello kitty silver</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Humble, true-by-design facts. No invented review counts. -->
+    <div class="facts">
+      <div class="wrap">
+        <ul>
+          <li><strong>Packed by hand</strong>Wrapped and boxed in Joburg</li>
+          <li><strong>Small batches</strong>One to three of each thing</li>
+          <li><strong>Prices in rand</strong>What you see + courier, that's it</li>
+          <li><strong>A real person</strong>Email me, I answer myself</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ================= SHOP ================= -->
+    <section id="drop">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="jp">♡ 今回の入荷 · on the shelf</span>
+            <h2>Shop the shelf</h2>
+          </div>
+          <p>Only a few of each. When a card says sold, it's sold — ask and I'll keep an eye out for another.</p>
+        </div>
+
+        <!-- TODO (Joseph): rewrite this note every drop. Keep it short and in your own words. -->
+        <p class="drop-note">
+          <strong>This drop:</strong> two figures, a Hello Kitty necklace that comes in its own gift box,
+          a Nekopara pouch, a Kuromi hairbrush, acrylic keychains (Nyan Cat too) and Adventure Time socks —
+          pick your character. Small, cute, and very giftable.
+        </p>
+
+        <div class="filters" role="group" aria-label="Filter products">
+          <button class="chip" type="button" data-filter="all" aria-pressed="true">Everything</button>
+          <button class="chip" type="button" data-filter="figures" aria-pressed="false">Figures</button>
+          <button class="chip" type="button" data-filter="jewellery" aria-pressed="false">Jewellery</button>
+          <button class="chip" type="button" data-filter="bags" aria-pressed="false">Bags</button>
+          <button class="chip" type="button" data-filter="beauty" aria-pressed="false">Beauty</button>
+          <button class="chip" type="button" data-filter="keychains" aria-pressed="false">Keychains</button>
+          <button class="chip" type="button" data-filter="socks" aria-pressed="false">Socks</button>
+        </div>
+
+        <div class="grid" id="grid" aria-live="polite"></div>
+        <noscript><p>The shop list needs JavaScript switched on.</p></noscript>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="story" id="about">
+      <div class="wrap">
+        <figure>
+          <img src="images/kawaii-chaos-logo.jpeg" width="1254" height="1254" loading="lazy"
+               alt="The Kawaii Chaos logo, lavender and black" />
+        </figure>
+        <div>
+          <span class="jp">♡ about · かわいい</span>
+          <h2>Soft, cute, slightly unhinged.</h2>
+          <!-- TODO (Joseph): personalise. First person reads as a real person; change to "we" if it's a team. -->
+          <p>
+            Kawaii Chaos started as a shelf of things I liked too much to keep to myself: figures, cute jewellery,
+            pouches and the kind of beauty bits that make getting ready a bit more fun.
+            Everything here is picked one at a time. No warehouse, no endless restocks.
+          </p>
+          <ul class="grades">
+            <li><span class="g">✦</span><div><strong>Figures</strong><span>Anime and game figures, checked over before they're wrapped and boxed.</span></div></li>
+            <li><span class="g">♡</span><div><strong>Jewellery</strong><span>Small, cute, gift-ready pieces. Ask if you want a note tucked in.</span></div></li>
+            <li><span class="g">✿</span><div><strong>Bags &amp; beauty</strong><span>Pouches, brushes and everyday bits with characters you actually like.</span></div></li>
+            <li><span class="g">☆</span><div><strong>Keychains &amp; socks</strong><span>Acrylic charms for your keys or bag, and character socks you pick one pair at a time.</span></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SHIPPING ================= -->
+    <section id="shipping" class="ship">
+      <div class="wrap ship-title">
+        <span class="jp">♡ 発送 · delivery</span>
+        <h2>Packing &amp; posting</h2>
+      </div>
+      <!-- TODO (Joseph): confirm couriers, prices and timings before going live. -->
+      <div class="wrap cols">
+        <div class="col">
+          <span class="num">01</span>
+          <h3>Wrapped properly</h3>
+          <p>Figures stay in their own box, wrapped, then go into a padded carton. Small things go in a sturdy, padded mailer.</p>
+        </div>
+        <div class="col">
+          <span class="num">02</span>
+          <h3>Out within 3 working days</h3>
+          <p>Courier to your door or to a locker near you anywhere in South Africa. You get a tracking number by email.</p>
+        </div>
+        <div class="col">
+          <span class="num">03</span>
+          <h3>Outside SA? Ask first</h3>
+          <p>International is possible but not cheap. Email me and I'll quote properly before you pay.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DROP LIST + ASK ================= -->
+    <section class="bottom" id="ask">
+      <div class="wrap">
+        <div class="panel">
+          <span class="jp">♡ お知らせ · drop list</span>
+          <h2>One email when new things land.</h2>
+          <p>That's the whole newsletter. No daily "sales", no "you left something in your basket".</p>
+          <!--
+            Newsletter: right now this only shows a thank-you (nothing is stored).
+            To collect real sign-ups, make a free form at https://formspree.io, then replace
+            REPLACE_WITH_FORMSPREE_ID below and set data-live="true".
+          -->
+          <form class="signup" id="signup" action="https://formspree.io/f/REPLACE_WITH_FORMSPREE_ID" method="POST" data-live="false">
+            <label class="sr-only" for="signup-email">Email address</label>
+            <input id="signup-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+            <button class="btn" type="submit">Put me on the list</button>
+          </form>
+          <span class="form-note mono" id="signup-note">Not connected yet — sign-ups aren't saved (see README).</span>
+        </div>
+
+        <div class="panel dark">
+          <span class="jp">♡ 質問 · ask</span>
+          <h2>Looking for something?</h2>
+          <p>Questions about an item, another photo, or a character you want me to look out for — email me.</p>
+          <!-- TODO (Joseph): replace REPLACE_ME@example.com with your real shop email (it appears here AND in js/shop.js). -->
+          <a class="btn" id="ask-link" href="mailto:REPLACE_ME@example.com?subject=Kawaii%20Chaos%20question">Email me</a>
+          <p class="mono email-line">REPLACE_ME@example.com</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span class="foot-brand"><img src="images/kawaii-chaos-logo.jpeg" width="28" height="28" alt="" />© <span id="year">2026</span> Kawaii Chaos · anime · beauty · merch · Johannesburg · prices in rand (ZAR)</span>
+      <nav aria-label="Footer">
+        <a href="#drop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#shipping">Delivery</a>
+        <a href="#ask">Ask</a>
+      </nav>
+    </div>
+  </footer>
+
+
+  <!-- ================= IMAGE LIGHTBOX ================= -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Enlarged product photo">
+    <button type="button" class="lightbox-backdrop" id="lightbox-backdrop" aria-label="Close enlarged photo"></button>
+    <figure class="lightbox-frame">
+      <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+      <img id="lightbox-img" src="" alt="" />
+      <figcaption class="lightbox-cap mono" id="lightbox-cap"></figcaption>
+    </figure>
+  </div>
+
+  <!-- ================= BASKET DRAWER ================= -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" inert>
+    <div class="drawer-head">
+      <h2 id="drawer-title">Your basket</h2>
+      <button class="x" type="button" id="drawer-close" aria-label="Close basket">✕</button>
+    </div>
+
+    <!-- view: basket -->
+    <div class="drawer-body" id="view-cart"><div id="lines"></div></div>
+    <div class="drawer-foot" id="foot-cart">
+      <div class="row"><span>Subtotal</span><span class="amt" id="subtotal">R0</span></div>
+      <p class="small">Courier is added on the next step.</p>
+      <button class="btn wide" type="button" id="to-checkout">Checkout</button>
+    </div>
+
+    <!-- view: checkout -->
+    <div class="drawer-body" id="view-checkout" hidden>
+      <div class="banner" id="mode-banner"></div>
+      <form class="form" id="checkout-form">
+        <label for="co-name">Name</label>
+        <input id="co-name" name="name" type="text" autocomplete="name" required />
+        <label for="co-email">Email</label>
+        <input id="co-email" name="email" type="email" autocomplete="email" required />
+        <label for="co-phone">Phone (for the courier)</label>
+        <input id="co-phone" name="phone" type="tel" autocomplete="tel" />
+
+        <fieldset class="ship-field">
+          <legend>Delivery</legend>
+          <div id="ship-options"></div>
+        </fieldset>
+
+        <label for="co-address">Address or locker / pickup point</label>
+        <textarea id="co-address" name="address" rows="3" autocomplete="street-address" required></textarea>
+
+        <div class="summary" id="summary"></div>
+        <div class="stack">
+          <button class="btn red wide" type="submit" id="pay-btn">Place order</button>
+          <button class="btn ghost wide" type="button" id="back-to-cart">Back to basket</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- view: done -->
+    <div class="drawer-body" id="view-done" hidden>
+      <div class="done">
+        <img class="done-logo" src="images/kawaii-chaos-logo.jpeg" width="72" height="72" alt="" />
+        <h3 id="done-title">Order noted</h3>
+        <p id="done-msg"></p>
+        <div class="stack">
+          <a class="btn red wide" id="pay-again" href="#" target="_blank" rel="noopener" hidden>Open payment page again</a>
+          <button class="btn ghost wide" type="button" id="paid-clear" hidden>I've paid — clear my basket</button>
+          <button class="btn wide" type="button" id="keep-shopping">Back to the shop</button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <script src="js/config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>
